@@ -95,7 +95,7 @@ public class InputValidation extends HttpServlet {
             }
             // user not authorized
             return false;
-        } catch (Throwable t) {
+        } catch (Throwable t) { //comment
             // do not authorize if any error happens
             return false;
         }
