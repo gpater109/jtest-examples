@@ -29,9 +29,8 @@ public class ExampleServlet extends HttpServlet {
         System.out.println(result);
         int n = result.length();
         if (n == 0) {
-            String pr = hello + result;
+            String pr = hello + result; // parasoft-suppress CWE.563.AURV "test"
         } else if (n > 0) {
-            String pr = result + hello; //test2
         }
         Enumeration e = sc.getInitParameterNames();
         while (e.hasMoreElements()) {
