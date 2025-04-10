@@ -31,7 +31,7 @@ public class ExampleServlet extends HttpServlet {
         if (n == 0) {
             String pr = hello + result;
         } else if (n > 0) {
-            String pr = result + hello;
+            String pr = result + hello; //test
         }
         Enumeration e = sc.getInitParameterNames();
         while (e.hasMoreElements()) {
